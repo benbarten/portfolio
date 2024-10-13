@@ -17,6 +17,10 @@ const StyledAboutSection = styled.section`
       display: block;
     }
   }
+
+  a {
+    color: var(--green) !important; /* Use !important to override other styles */
+  }
 `;
 const StyledText = styled.div`
   ul.skills-list {
@@ -34,6 +38,7 @@ const StyledText = styled.div`
       padding-left: 20px;
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
+      color: var(--green);
 
       &:before {
         content: '▹';
@@ -125,7 +130,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Go',
+    'JavaScript (ES6+)',
+    'Bash',
+    'Kubernetes',
+    'Docker',
+    'GCP',
+    'PostgreSQL',
+    'Google BigQuery',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +149,29 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hey! I'm Ben and I am a self-taught software engineer from Germany. In 2017, I quit my
+              studies in teaching and started working as a data analyst for a startup. I quickly
+              realized that I wanted to learn how to build the software I was analyzing, so I taught
+              myself programming. Three months later, I was offered a full-time position and never
+              looked back.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Fast-forward to today, and I’ve had the privilege of working at<br></br>
+              <ul>
+                <li>
+                  <a href="https://fino.group/en//">fino</a> which enabled me breaking into the tech
+                  industry{' '}
+                </li>
+                <li>
+                  <a href="https://fraugster.com/">Fraugster</a> a fraud AI company with some of the
+                  smartest engineers I ever met{' '}
+                </li>
+                <li>
+                  <a href="https://www.semrush.com/">Semrush</a> where I built a product from 0 to
+                  Xm ARR and became a Tech Lead
+                </li>
+              </ul>
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
