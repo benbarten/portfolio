@@ -3,6 +3,10 @@ module.exports = {
 
   socialMedia: [
     {
+      name: 'Substack',
+      url: 'https://devshift.substack.com/',
+    },
+    {
       name: 'GitHub',
       url: 'https://github.com/benbarten',
     },
