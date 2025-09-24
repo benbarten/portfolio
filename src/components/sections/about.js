@@ -132,7 +132,7 @@ const About = () => {
 
   const skills = [
     'Go',
-    'JavaScript (ES6+)',
+    'JavaScript/TypeScript (ES6+)',
     'Bash',
     'Kubernetes',
     'Docker',
@@ -169,7 +169,7 @@ const About = () => {
                 </li>
                 <li>
                   <a href="https://www.semrush.com/">Semrush</a> where I built a product from 0 to
-                  Xm ARR and became a Tech Lead
+                  Xm ARR and became an Engineering Manager
                 </li>
               </ul>
             </p>

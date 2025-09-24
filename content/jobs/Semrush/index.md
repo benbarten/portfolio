@@ -1,6 +1,6 @@
 ---
 date: '2024-08-01'
-title: 'Technical Lead'
+title: 'Technical Lead / Engineering Manager'
 company: 'Semrush'
 location: 'Berlin, Germany'
 range: 'August 2022 - Now'
@@ -13,3 +13,4 @@ url: 'https://semrush.com'
 - Led the backend chapter to foster cross-team collaboration and knowledge sharing within our unit
 - Mentored junior engineers who evolved into senior engineers
 - Took over the data infrastructure team and led a 6-month migration process to reduce the data gathering error rate by 90% and allow the architecture to scale horizontally
+- Was promoted to an Engineering Manager for three teams with 22 direct reports
