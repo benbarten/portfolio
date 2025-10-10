@@ -61,13 +61,12 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Ben Barten.</h2>;
-  const three = <h3 className="big-heading">I build software. I run it. I keep it running.</h3>;
+  const three = <h3 className="big-heading">Cutting edge software and teams from zero to high-growth scale.</h3>;
   const four = (
     <>
       <p>
-        I'm a self-taught, polyglot software engineer building lean, scalable and performant
-        applications. I geek out on system design, data structures, algorithms and anything around
-        data. Currently, I'm doing this at{' '}
+        I'm a self-taught, polyglot software engineer and engineering manager building lean, scalable, and performant
+        applications and teams. I geek out on building products, systems, and developing the people around me. Currently, I'm doing this at{' '}
         <a href="https://semrush.com" target="_blank" rel="noreferrer">
           Semrush
         </a>
