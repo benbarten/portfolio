@@ -4,7 +4,7 @@ const gaMeasurementId = process.env.GA_MEASUREMENT_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'Ben Barten',
+    title: 'Ben Barten | Backend software engineering in Berlin',
     description:
       'Ben Barten is a software engineer with a focus on building lean, scalable and high-performant software.',
     siteUrl: 'https://benbarten.com', // No trailing slash allowed!
@@ -154,20 +154,20 @@ module.exports = {
     // GA4 — set GA_MEASUREMENT_ID (G-XXXXXXXX) at build time (e.g. Netlify env)
     ...(gaMeasurementId
       ? [
-          {
-            resolve: `gatsby-plugin-google-gtag`,
-            options: {
-              trackingIds: [gaMeasurementId],
-              gtagConfig: {
-                anonymize_ip: true,
-              },
-              pluginConfig: {
-                head: true,
-                respectDNT: true,
-              },
+        {
+          resolve: `gatsby-plugin-google-gtag`,
+          options: {
+            trackingIds: [gaMeasurementId],
+            gtagConfig: {
+              anonymize_ip: true,
+            },
+            pluginConfig: {
+              head: true,
+              respectDNT: true,
             },
           },
-        ]
+        },
+      ]
       : []),
     `gatsby-plugin-netlify`, // must be last in the array
   ],
