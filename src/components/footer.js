@@ -72,13 +72,13 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
@@ -86,7 +86,9 @@ const Footer = () => (
       <a href="https://github.com/bchiang7/v4">
         <div>Designed by Brittany Chiang</div>
       </a>
-      <div>Built by Ben Barten</div>
+      <div>
+        Built by <a href="https://benbarten.com/">Ben Barten</a>
+      </div>
     </StyledCredit>
   </StyledFooter>
 );

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
@@ -152,6 +152,10 @@ const ArchivePage = ({ location, data }) => {
 
       <main>
         <header ref={revealTitle}>
+          <span className="breadcrumb">
+            <span className="arrow">&larr;</span>
+            <Link to="/">Ben Barten</Link>
+          </span>
           <h1 className="big-heading">Archive</h1>
           <p className="subtitle">A big list of things I’ve worked on</p>
         </header>
